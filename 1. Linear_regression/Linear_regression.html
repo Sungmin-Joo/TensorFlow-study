@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Untitled</title>
+<title>Linear_regression</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13115,7 +13115,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
@@ -13138,7 +13138,7 @@ tensorflow 외에도 matplotlib.pyplot를 추가한다.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
@@ -13160,7 +13160,7 @@ tensorflow 외에도 matplotlib.pyplot를 추가한다.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_data</span><span class="p">,</span><span class="n">y_data</span><span class="p">,</span><span class="s1">&#39;ys--&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;original_func&#39;</span><span class="p">)</span>
@@ -13181,7 +13181,7 @@ tensorflow 외에도 matplotlib.pyplot를 추가한다.</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[46]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -13230,7 +13230,7 @@ tensorflow 외에도 matplotlib.pyplot를 추가한다.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">W</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_normal</span><span class="p">([</span><span class="mi">1</span><span class="p">]),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;weight&#39;</span><span class="p">)</span>
@@ -13272,7 +13272,7 @@ $$cost(W,b) = {1\over m} \sum_{i=1}^m (H(x_i) - y_i)^2$$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#cost function</span>
@@ -13301,7 +13301,7 @@ $$cost(W,b) = {1\over m} \sum_{i=1}^m (H(x_i) - y_i)^2$$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Minimize code</span>
@@ -13331,7 +13331,7 @@ $$cost(W,b) = {1\over m} \sum_{i=1}^m (H(x_i) - y_i)^2$$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#구현한 그래프를 실행시키기 위한 세션을 정의</span>
@@ -13347,7 +13347,7 @@ $$cost(W,b) = {1\over m} \sum_{i=1}^m (H(x_i) - y_i)^2$$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#학습 결과 확인</span>
@@ -13373,32 +13373,32 @@ $$cost(W,b) = {1\over m} \sum_{i=1}^m (H(x_i) - y_i)^2$$</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>단계 :  0  비용 :  28.020678  W:  [0.84018993]  b:  [-1.0093745]
-단계 :  200  비용 :  0.07238181  W:  [2.1342516]  b:  [0.5236113]
-단계 :  400  비용 :  0.0067609157  W:  [2.0410306]  b:  [0.8544039]
-단계 :  600  비용 :  0.0006315078  W:  [2.0125399]  b:  [0.9555024]
-단계 :  800  비용 :  5.898777e-05  W:  [2.0038326]  b:  [0.9864005]
-단계 :  1000  비용 :  5.5106048e-06  W:  [2.0011716]  b:  [0.9958434]
-단계 :  1200  비용 :  5.153241e-07  W:  [2.0003586]  b:  [0.998729]
-단계 :  1400  비용 :  4.8380418e-08  W:  [2.0001097]  b:  [0.9996104]
-단계 :  1600  비용 :  4.5978847e-09  W:  [2.0000336]  b:  [0.9998798]
-단계 :  1800  비용 :  4.3730175e-10  W:  [2.0000107]  b:  [0.999963]
-단계 :  2000  비용 :  6.813868e-11  W:  [2.0000045]  b:  [0.9999858]
-단계 :  2200  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
-단계 :  2400  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
-단계 :  2600  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
-단계 :  2800  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
-단계 :  3000  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
-단계 :  3200  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
-단계 :  3400  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
-단계 :  3600  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
-단계 :  3800  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
-단계 :  4000  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
-단계 :  4200  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
-단계 :  4400  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
-단계 :  4600  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
-단계 :  4800  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
-단계 :  5000  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
+<pre>cnt :  0  비용 :  103.15629  W:  [-0.8090303]  b:  [-0.9296248]
+cnt :  200  비용 :  0.033112887  W:  [2.0908036]  b:  [0.6777854]
+cnt :  400  비용 :  0.0030929528  W:  [2.027752]  b:  [0.90152335]
+cnt :  600  비용 :  0.0002888993  W:  [2.0084817]  b:  [0.96990323]
+cnt :  800  비용 :  2.6984022e-05  W:  [2.002592]  b:  [0.9908019]
+cnt :  1000  비용 :  2.5210902e-06  W:  [2.0007925]  b:  [0.9971885]
+cnt :  1200  비용 :  2.3597367e-07  W:  [2.0002427]  b:  [0.99913985]
+cnt :  1400  비용 :  2.2168045e-08  W:  [2.0000744]  b:  [0.9997362]
+cnt :  1600  비용 :  2.0751092e-09  W:  [2.0000226]  b:  [0.9999193]
+cnt :  1800  비용 :  2.1784292e-10  W:  [2.0000076]  b:  [0.999974]
+cnt :  2000  비용 :  3.6701902e-11  W:  [2.0000033]  b:  [0.99998975]
+cnt :  2200  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
+cnt :  2400  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
+cnt :  2600  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
+cnt :  2800  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
+cnt :  3000  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
+cnt :  3200  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
+cnt :  3400  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
+cnt :  3600  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
+cnt :  3800  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
+cnt :  4000  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
+cnt :  4200  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
+cnt :  4400  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
+cnt :  4600  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
+cnt :  4800  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
+cnt :  5000  비용 :  2.800545e-11  W:  [2.000003]  b:  [0.9999909]
 </pre>
 </div>
 </div>
@@ -13418,12 +13418,11 @@ $$cost(W,b) = {1\over m} \sum_{i=1}^m (H(x_i) - y_i)^2$$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#tensor객체에서 값을 빼오기위해 변수 선언</span>
-<span class="n">W_v</span> <span class="o">=</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">W</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">b_v</span> <span class="o">=</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">b</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">W_v</span><span class="p">,</span> <span class="n">b_v</span> <span class="o">=</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="n">W</span><span class="p">,</span><span class="n">b</span><span class="p">])</span>
 
 
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_data</span><span class="p">,</span><span class="n">y_data</span><span class="p">,</span><span class="s1">&#39;ys--&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;original_func&#39;</span><span class="p">)</span>
@@ -13448,7 +13447,7 @@ $$cost(W,b) = {1\over m} \sum_{i=1}^m (H(x_i) - y_i)^2$$</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[68]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
